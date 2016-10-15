@@ -1,0 +1,101 @@
+EESchema Schematic File Version 2
+LIBS:device
+LIBS:conn
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Mi diseño"
+Date "2016-10-14"
+Rev "1.0"
+Comp "Home"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 K1
+U 1 1 58017B15
+P 3250 3000
+F 0 "K1" H 3250 3200 50  0000 C CNN
+F 1 "CONN_3" V 3350 3000 50  0000 C CNN
+F 2 "" H 3250 3000 50  0000 C CNN
+F 3 "" H 3250 3000 50  0000 C CNN
+	1    3250 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 58017F6E
+P 4350 2350
+F 0 "D1" H 4350 2450 50  0000 C CNN
+F 1 "LED ROJO" H 4350 2250 50  0000 C CNN
+F 2 "" H 4350 2350 50  0000 C CNN
+F 3 "" H 4350 2350 50  0000 C CNN
+	1    4350 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D2
+U 1 1 58018007
+P 4350 3450
+F 0 "D2" H 4350 3550 50  0000 C CNN
+F 1 "1N4148" H 4350 3350 50  0000 C CNN
+F 2 "" H 4350 3450 50  0000 C CNN
+F 3 "" H 4350 3450 50  0000 C CNN
+	1    4350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5801806F
+P 4350 2650
+F 0 "C1" H 4375 2750 50  0000 L CNN
+F 1 "100n" H 4375 2550 50  0000 L CNN
+F 2 "" H 4388 2500 50  0000 C CNN
+F 3 "" H 4350 2650 50  0000 C CNN
+	1    4350 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 580180EC
+P 5000 3050
+F 0 "R1" V 5080 3050 50  0000 C CNN
+F 1 "100K" V 5000 3050 50  0000 C CNN
+F 2 "" V 4930 3050 50  0000 C CNN
+F 3 "" H 5000 3050 50  0000 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3100 3550 3100
+Wire Wire Line
+	3550 3100 3550 3450
+Wire Wire Line
+	3550 3450 4200 3450
+Wire Wire Line
+	3450 2900 3550 2900
+Wire Wire Line
+	3550 2900 3550 2350
+Wire Wire Line
+	3550 2350 4200 2350
+Wire Wire Line
+	4200 2650 3550 2650
+Connection ~ 3550 2650
+Wire Wire Line
+	5000 3200 5000 3450
+Wire Wire Line
+	5000 3450 4500 3450
+Wire Wire Line
+	4500 2650 5000 2650
+Wire Wire Line
+	5000 2650 5000 2900
+Wire Wire Line
+	4500 2350 4700 2350
+Wire Wire Line
+	4700 2350 4700 2650
+Connection ~ 4700 2650
+$EndSCHEMATC
