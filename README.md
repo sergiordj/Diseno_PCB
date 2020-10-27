@@ -1,2 +1,2 @@
 # Diseno_PCB
-Pequeño respo para la materia de diseño de pcb
+Poncho de ESP8266 para EDU-CIAA
